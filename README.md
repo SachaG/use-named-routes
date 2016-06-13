@@ -24,7 +24,7 @@ const routes = (
 );
 
 // The order of history enhancers matters here.
-const history = useNamedRoutes(useRouterHistory(createHistory))({ routes });
+const history = useNamedRoutes(useRouterHistory(createHistory))({ routes: routes });
 
 ReactDOM.render(
   <Router history={history} routes={routes} />,
